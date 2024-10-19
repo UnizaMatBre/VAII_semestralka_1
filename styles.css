@@ -84,3 +84,21 @@ html, body {
 	
 	overflow-y: scroll;
 }
+
+/* Computer screen  */
+@media only screen and (min-width: 600px) {
+	#page-section {
+		background-color: orange;
+		
+	}
+}
+
+/* Smartphoe screen */
+@media only screen and (max-width: 600px) {
+	#page-section {
+		background-color: blue;
+		
+	}
+	
+}
+
