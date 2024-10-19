@@ -62,23 +62,18 @@
 
 #menu-section nav ul li a:hover {
 	background-color: red;
-	padding-left: 10px;
 	
 	transition: 0.0s;
 
 }
 
 #page-section {
-	position: fixed;
 	
-	top: 0;
-	left: 200px;
-	width: 87%;
-	height: 100%;
+	margin-left: 200px;
 
 	border-left: 15px solid red;
 	border-right: 15px solid red;
-	box-sizing: border-box;
+
 
 	padding: 20px;
 	
