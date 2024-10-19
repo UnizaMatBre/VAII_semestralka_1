@@ -37,7 +37,14 @@
 			
 			<div class="flexcol-container">
 				<label for="post-code-input-area">Code</label>
-				<textarea id="post-code-input-area" name="code-input-area" class="verical-scroll-textarea"></textarea>
+				<textarea id="post-code-input-area" name="code-input-area" class="verical-scroll-textarea">
+function(ctx, locals, tick) {
+ // ctx:    canvas 2d context (200 * 200 pixels)
+ // locals: empy object shared between calls
+ // tick:   number of calls from 0
+}
+				
+				</textarea>
 				
 				<button id="post-code-eval-input">Evaluate</button>
 				
