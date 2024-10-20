@@ -215,3 +215,31 @@ html, body {
 	
 	justify-content: center;
 }
+
+#user-profile-details {
+	border: 5px solid gray;
+	box-shadow: 2px 2px 2px red;
+	
+	margin-top: 5px;
+	margin-bottom: 10px;
+	
+}
+
+#user-profile-details summary {
+	list-style: none;
+	
+	text-decoration: underline;
+	
+}
+
+#user-profile-details summary::marker  {
+	display: none;
+}
+
+#user-profile-details ul  {
+}
+
+#user-profile-details ul li {
+	padding: 5px;
+	
+}
