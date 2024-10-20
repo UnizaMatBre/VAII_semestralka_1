@@ -182,3 +182,19 @@ html, body {
 	display: flex;
 	flex-direction: column;
 }
+
+
+.infinity-scroll-list {
+	padding: 5px;
+	list-style-type: none;
+	
+	overflow-y: scroll;
+}
+
+.infinity-scroll-list li {
+	border: 5px solid gray;
+	box-shadow: 5px 5px 5px red;
+	
+	padding: 25px;
+	margin: 0px;
+}
