@@ -25,13 +25,19 @@
 		
 		<div id="page-section">		
 			<ul class="infinity-scroll-list">
-				<li>Some random text</li>
 			</ul>
 		
 		</div>
 		
 		<script src="scripts/infinity-scroll-scripts.js"></script> 
 		
+		<script>
+			addEventListener("load", 
+				(eventObj) => { 
+					initInfiniteScroller(document.getElementsByClassName("infinity-scroll-list")[0]); 
+				}
+			);
+		</script>
 		
 	</body>
 
