@@ -14,9 +14,17 @@ const sanitizeBindCode = function(canvasCtx, codeText) {
 
 const registerAllEventHandlers = function(event) {
 	document.getElementById("post-code-eval-input").addEventListener("click", (eventObj) => {
+		const MAX_TICKS = 360;
+		
 		const canvasObj = document.getElementById("post-code-canvas");
 		const canvasCtx = canvasObj.getContext("2d");
 		const textinObj = document.getElementById("post-code-input-area");
+		
+		const ticksNow = document.getElementById("post-code-current-tick");
+		const ticksMax = document.getElementById("post-code-current-tick");
+		
+		ticksNow.innerText = "0";
+		ticksMax.innerText = MAX_TICKS;
 		
 		// clear canvas
 		canvasCtx.clearRect(0, 0, canvasObj.width, canvasObj.height);
@@ -28,8 +36,9 @@ const registerAllEventHandlers = function(event) {
 		var tick = 0;
 		
 		const intervalId = setInterval(() => {
-			if(tick >= 360) {
-				alert("done");
+			ticksNow.innerText = "" + tick;
+			
+			if(tick >= MAX_TICKS) {
 				clearInterval(intervalId);
 			};
 			
